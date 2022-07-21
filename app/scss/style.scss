@@ -4,7 +4,7 @@
 @import 'global';
 
 .header {
-  background: linear-gradient(90deg, #696989, #A9A9C4);
+  background: linear-gradient(90deg, $accent, $lavender);
   height: 120px;
   padding: 33px;
 }
@@ -36,7 +36,7 @@
 
   &__link:hover,
   &__link-dropdown:hover {
-    color: #EDD374;
+    color: $gold;
   }
 
   &__list-dropdown {
@@ -56,7 +56,7 @@
   &__img {
     width: 40px;
     height: 40px;
-    fill: #292626;
+    fill: $dark;
   }
 
   &__btn {
@@ -68,7 +68,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #908DB9;
+    background-color: $accent;
     top: 50%;
     right: -10%;
     font-size: 10px;
@@ -76,4 +76,57 @@
     text-align: center;
     line-height: 2;
   }
+}
+
+.top {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+  }
+
+  &__title {
+    font-family: 'corinthia';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+    color: $black;
+  }
+
+  &__info {
+    max-width: 400px;
+    margin-right: 15px;
+  }
+
+  &__box {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      max-width: 670px;
+      max-height: 427px;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: $accent;
+      border-radius: 8px;
+      transform: rotate(3.85deg);
+      z-index: -1;
+    }
+  }
+
+  &__img {
+    border-radius: 8px;
+  }
+
 }

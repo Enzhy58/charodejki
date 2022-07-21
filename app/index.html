@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,68 +8,92 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div class="wrapper">
 
     <header class="header">
-        <div class="container">
+      <div class="container">
 
-            <nav class="menu">
-              <a class="logo" href="#">
-                <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+        <nav class="menu">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+          </a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог</a>
+              <ul class="menu__list-dropdown">
+                <li class="menu__item-dropdown">
+                  <a class="menu__link-dropdown" href="#">Торты</a>
+                </li>
+                <li class="menu__item-dropdown">
+                  <a class="menu__link-dropdown" href="#">Десерты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Кафе</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Заказ и доставка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#" target="_blank">
+                <svg class="user-nav__img">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
               </a>
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Каталог</a>
-                  <ul class="menu__list-dropdown">
-                    <li class="menu__item-dropdown">
-                      <a class="menu__link-dropdown" href="#">Торты</a>
-                    </li>
-                    <li class="menu__item-dropdown">
-                      <a class="menu__link-dropdown" href="#">Десерты</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Кафе</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Заказ и доставка</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Контакты</a>
-                </li>
-              </ul>
-              <ul class="user-nav">
-                <li class="user-nav__item">
-                  <a class="user-nav__link" href="#" target="_blank">
-                    <svg class="user-nav__img">
-                      <use xlink:href="images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="user-nav__item">
-                  <a class="user-nav__link" href="#" target="_blank">
-                    <svg class="user-nav__img">
-                      <use xlink:href="images/sprite.svg#phone"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="user-nav__item">
-                  <button class="user-nav__btn" type="button">
-                    <svg class="user-nav__img">
-                      <use xlink:href="images/sprite.svg#cart"></use>
-                    </svg>
-                    <span class="user-nav__num">3</span>
-                  </button>
-                </li>
-              </ul>
-            </nav>
-        
-        </div>
- 
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#" target="_blank">
+                <svg class="user-nav__img">
+                  <use xlink:href="images/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button">
+                <svg class="user-nav__img">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+                <span class="user-nav__num">3</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
     </header>
+
+    <section class="top">
+      <div class="container">
+        <div class="top__wrapper">
+
+          <div class="top__content">
+            <div class="top__info">
+              <h1 class="sr-only">Кондитерская Чародейки</h1>
+              <h2 class="top__title">Торты на заказ</h2>
+              <span class="top__description">
+                Свадебный торт. Торт на день рождения. Торт просто так!
+              </span>
+              <a class="btn" href="#">Заказать торт</a>
+            </div>
+            <div class="top__box">
+              <img class="top__img" src="images/header-img.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </div>
 </body>
+
 </html>

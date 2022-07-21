@@ -25,3 +25,26 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+
+.btn {
+  display: block;
+  width: 265px;
+  height: 66px;
+  color: #F9F9F4;
+  background-color: #292626;
+  border-radius: 43px;
+  padding: 20px 40px;
+  text-align: center;
+  margin-top: 30px;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -o-transition: 1s ease;
+}
+
+.btn:hover {
+  background-color: #EDD374;
+  border: 1px solid #292626;
+  color: #292626;
+  transition: all .5s;
+}
