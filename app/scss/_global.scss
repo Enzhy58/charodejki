@@ -26,6 +26,33 @@ body {
   margin: 0 auto;
 }
 
+.page-section {
+  padding: 70px 0 70px;
+}
+
+.title {
+  font-family: 'corinthia';
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 96px;
+  text-align: center;
+  color: $black;
+  margin-bottom: 70px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 236px;
+    height: 2px;
+    background-color: $dark;
+    bottom: 124px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
 
 .btn {
   display: block;
