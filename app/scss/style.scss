@@ -446,3 +446,40 @@
     }
   }
 }
+
+
+.cakes {
+  background-color: $lavender;
+
+  &__weight,
+  &__kind,
+  &__filling {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    max-width: 331px;
+    margin-bottom: 70px;
+  }
+
+  &__img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+  }
+}
