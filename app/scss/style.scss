@@ -447,6 +447,19 @@
   }
 }
 
+.works {
+  &--cakes {
+    background-color: $lavender;
+    height: calc(100vh - 120px);
+  }
+  &__inner {
+    margin-bottom: 100px;
+  }
+  &__btn {
+    margin: 0 auto;
+  }
+}
+
 
 .cakes {
   background-color: $lavender;
