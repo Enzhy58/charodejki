@@ -80,6 +80,11 @@
     margin: auto 0;
   }
 
+  &__info {
+    max-width: 400px;
+    margin-right: 15px;
+  }
+
   &__title {
     font-family: 'corinthia';
     font-weight: 400;
@@ -87,11 +92,6 @@
     line-height: 96px;
     text-align: center;
     color: $black;
-  }
-
-  &__info {
-    max-width: 400px;
-    margin-right: 15px;
   }
 
   &__box {
@@ -190,6 +190,7 @@
 
   &__btn {
     margin-left: auto;
+    margin-right: 0;
   }
 
 }
@@ -311,7 +312,6 @@
   }
 
   &__input {
-    margin-bottom: 20px;
     width: 275px;
     height: 64px;
     border-radius: 39px;
@@ -326,6 +326,10 @@
       font-size: 20px;
       line-height: 29px;
     }
+  }
+
+  &__input:first-child {
+    margin-bottom: 20px;
   }
 
   &__title {
@@ -447,18 +451,58 @@
   }
 }
 
-.works {
-  &--cakes {
-    background-color: $lavender;
+.description {
+  background-color: $lavender;
+  height: calc(100vh - 120px);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
     height: calc(100vh - 120px);
   }
-  &__inner {
-    margin-bottom: 100px;
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
   }
-  &__btn {
-    margin: 0 auto;
+
+  &__info {
+    max-width: 500px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      max-width: 340px;
+      max-height: 413px;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border: 6px solid $accent;
+      border-radius: 13px;
+      transform: rotate(5.71deg);
+      z-index: -1;
+      transition: transform 1s;
+    }
+
+    &:hover::before {
+      transform: rotate(0deg);
+    }
   }
 }
+
 
 
 .cakes {
@@ -500,7 +544,7 @@
     padding: 5px 0;
     color: $accent;
   }
-  
+
 
   &__title {
     font-size: 24px;
@@ -519,6 +563,7 @@
 
 .order {
   background: linear-gradient(90deg, $accent, $lavender);
+
   &__text {
     color: $silver;
     text-align: center;
@@ -526,7 +571,14 @@
     margin: 0 auto;
     margin-bottom: 50px;
   }
+
   &__text p:not(:last-child) {
     margin-bottom: 20px;
+  }
+}
+
+.contacts {
+  &--cakes {
+    background: $lavender;
   }
 }
