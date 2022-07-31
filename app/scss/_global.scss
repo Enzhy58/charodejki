@@ -1,3 +1,9 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-size: 24px;
@@ -6,6 +12,8 @@ body {
   color: $black;
   background-color: $lavender;
   font-family: $montserrat, sans-serif;
+  overflow-x: hidden;
+  min-width: 320px;;
 }
 
 .sr-only {
@@ -21,12 +29,25 @@ body {
   overflow: hidden;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
 
 .page-section {
   padding: 70px 0 70px;
