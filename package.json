@@ -9,8 +9,10 @@
   "author": "Anjelika Borisova",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
+    "fancybox": "^3.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cheerio": "^1.0.0",
