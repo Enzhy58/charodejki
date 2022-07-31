@@ -12,13 +12,22 @@
 <body>
   <div class="wrapper">
 
-    <header class="header">
-      <div class="container">
-
-        <nav class="menu">
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
-          </a>
+  <header class="header">
+    <div class="container">
+  
+      <nav class="menu">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+        </a>
+        <button class="menu__open" type="button">
+          <span></span>
+        </button>
+        <div class="menu__box">
+          <button class="menu__close" type="button">
+            <svg class="menu__img">
+              <use xlink:href="images/sprite.svg#close"></use>
+            </svg>
+          </button>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">Торты</a>
@@ -60,15 +69,16 @@
               </button>
             </li>
           </ul>
-        </nav>
-
-      </div>
-
-    </header>
+        </div>
+      </nav>
+  
+    </div>
+  
+  </header>
 
     <main class="main">
 
-      <section class="cafe" style="background-image: url(images/cafe-bg.jpg);">
+      <section class="cafe page-section" style="background-image: url(images/cafe-bg.jpg);">
         <div class="container">
           <h2 class="sr-only">Кафе</h2>
           <div class="cafe__inner">
@@ -102,6 +112,7 @@
     </main>
 
   </div>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

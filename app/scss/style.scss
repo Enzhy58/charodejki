@@ -605,12 +605,14 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-right: -30px;
   }
 
   &__item {
     margin-bottom: 60px;
+    margin-right: 30px;
     box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
     transition: box-shadow 0.3s;
 
@@ -621,7 +623,7 @@
 }
 
 .product-card {
-  max-width: 346px;
+  max-width: 320px;
   min-height: 546px;
   height: 100%;
   background-color: $silver;
@@ -757,6 +759,8 @@
   }
 
   &__box span {
+    display: block;
+    text-align: center;
     font-weight: 500;
     color: $silver;
   }
@@ -975,9 +979,11 @@
 
   .description {
     height: 100%;
+
     &__wrapper {
       height: 100%;
     }
+
     &__content {
       flex-direction: column;
     }
@@ -1084,6 +1090,12 @@
     }
   }
 
+  .cafe {
+    &__inner {
+      height: calc(100vh - 90px);
+    }
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -1116,17 +1128,29 @@
       max-width: 250px;
       margin-bottom: 30px;
     }
+
     &__title {
       font-size: 20px;
       margin-bottom: 5px;
     }
+
     &__text {
       font-size: 16px;
     }
+
     &__img {
       width: 250px;
       height: 250px;
       margin-bottom: 10px;
+    }
+  }
+
+  .cafe {
+    &__box:not(:last-child) {
+      margin-right: 50px;
+    }
+    &__text {
+      margin-bottom: 50px;
     }
   }
 
@@ -1172,6 +1196,11 @@
   .description {
     &__box {
       width: 80%;
+    }
+  }
+  .cafe {
+    &__inner {
+      height: 100%;
     }
   }
 }
