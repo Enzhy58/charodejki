@@ -3,3 +3,84 @@
 @import 'reset';
 @import 'global';
 @import 'libs';
+
+
+.header {
+    background: linear-gradient(90deg, $accent, $lavender);
+    padding: 28px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    .menu {
+        display: flex;
+        align-items: center;
+      
+        &__box {
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+        }
+      
+        &__close {
+          display: none;
+        }
+      
+        &__list {
+          display: flex;
+          margin-right: 60px;
+          font-size: 20px;
+        }
+      
+        &__item {
+      
+          &:not(:last-child) {
+            margin-right: 24px;
+          }
+      
+        }
+      
+        &__link {
+          transition: color 0.3s;
+        }
+      
+        &__link:hover {
+          color: $gold;
+        }
+      
+      }
+      
+      .user-nav {
+        display: flex;
+      
+        &__item:not(:last-child) {
+          margin-right: 10px;
+        }
+      
+        &__img {
+          width: 40px;
+          height: 40px;
+          fill: $dark;
+        }
+      
+        &__btn {
+          position: relative;
+        }
+      
+        &__num {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: $accent;
+          top: 50%;
+          right: -10%;
+          font-size: 10px;
+          color: $white;
+          line-height: 2;
+        }
+      
+      }
+      
+}
