@@ -156,3 +156,37 @@
   }
 
 }
+
+.top {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  &__content {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  &__info {
+    max-width: 400px;
+    margin-right: 15px;
+  }
+
+  &__title {
+    font-family: 'corinthia';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+  }
+
+}
