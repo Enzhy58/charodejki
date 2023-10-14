@@ -6,81 +6,153 @@
 
 
 .header {
-    background: linear-gradient(90deg, $accent, $lavender);
-    padding: 28px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 999;
+  background: linear-gradient(90deg, $accent, $lavender);
+  padding: 28px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
 
-    .menu {
-        display: flex;
-        align-items: center;
-      
-        &__box {
-          display: flex;
-          align-items: center;
-          margin-left: auto;
-        }
-      
-        &__close {
-          display: none;
-        }
-      
-        &__list {
-          display: flex;
-          margin-right: 60px;
-          font-size: 20px;
-        }
-      
-        &__item {
-      
-          &:not(:last-child) {
-            margin-right: 24px;
-          }
-      
-        }
-      
-        &__link {
-          transition: color 0.3s;
-        }
-      
-        &__link:hover {
-          color: $gold;
-        }
-      
+  .menu {
+    display: flex;
+    align-items: center;
+
+    &__box {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    &__close {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      margin-right: 60px;
+      font-size: 20px;
+    }
+
+    &__item {
+
+      &:not(:last-child) {
+        margin-right: 24px;
       }
-      
-      .user-nav {
-        display: flex;
-      
-        &__item:not(:last-child) {
-          margin-right: 10px;
-        }
-      
-        &__img {
-          width: 40px;
-          height: 40px;
-          fill: $dark;
-        }
-      
-        &__btn {
-          position: relative;
-        }
-      
-        &__num {
-          position: absolute;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          background-color: $accent;
-          top: 50%;
-          right: -10%;
-          font-size: 10px;
-          color: $white;
-          line-height: 2;
-        }
-      
+
+    }
+
+    &__link {
+      transition: color 0.3s;
+    }
+
+    &__link:hover {
+      color: $gold;
+    }
+
+  }
+
+  .user-nav {
+    display: flex;
+
+    &__item:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &__img {
+      width: 40px;
+      height: 40px;
+      fill: $dark;
+    }
+
+    &__btn {
+      position: relative;
+    }
+
+    &__num {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $accent;
+      top: 50%;
+      right: -10%;
+      font-size: 10px;
+      color: $white;
+      line-height: 2;
+    }
+
+  }
+
+}
+
+.footer {
+  background-color: $dark;
+  font-size: 15px;
+  line-height: 18px;
+  color: $silver;
+  padding: 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__confidentiality,
+  &__navigation {
+    margin-right: 40px;
+  }
+
+  &__title {
+    display: block;
+    font-family: 'corinthia';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 18px;
+  }
+
+  &__copy {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__copy,
+  &__link {
+    transition: color 0.3s;
+
+    &:hover {
+      color: $gold;
+    }
+    
+  }
+
+  .menu {
+
+    &__list {
+      flex-direction: column;
+      font-size: 15px;
+      margin-top: 0;
+      margin-right: 0;
+    }
+
+    &__item {
+      margin-right: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
       }
-      
+
+    }
+
+  }
+
+  &__link {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+  }
+
 }

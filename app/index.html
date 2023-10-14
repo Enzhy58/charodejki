@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,82 +8,130 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-  
-      <nav class="menu">
-  
-        <a class="logo" href="#" id="home">
-          <img class="logo__img" src="images/icons/logo.svg" width="196" height="65" alt="логотип">
-        </a>
-  
-        <button class="menu__open" type="button">
-          <span></span>
-          <span class="sr-only">открыть меню</span>
-        </button>
-  
-        <div class="menu__box">
-  
-          <button class="menu__close" type="button">
-            <svg class="menu__img">
-              <use xlink:href="images/sprite.svg#close"></use>
-            </svg>
-            <span class="sr-only">закрыть меню</span>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+
+        <nav class="menu">
+
+          <a class="logo" href="#" id="home">
+            <img class="logo__img" src="images/icons/logo.svg" width="196" height="65" alt="логотип">
+          </a>
+
+          <button class="menu__open" type="button">
+            <span></span>
+            <span class="sr-only">открыть меню</span>
           </button>
-  
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#" id="cakes">Торты</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#" id="desserts">Десерты</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Кафе</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#works">Заказ и доставка</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-  
-          <ul class="user-nav">
-            <li class="user-nav__item">
-              <a class="user-nav__link" href="#" target="_blank">
-                <svg class="user-nav__img">
-                  <use xlink:href="images/sprite.svg#instagram"></use>
-                </svg>
-                <span class="sr-only">инстаграм</span>
-              </a>
-            </li>
-            <li class="user-nav__item">
-              <a class="user-nav__link" href="tel:89061564997">
-                <svg class="user-nav__img">
-                  <use xlink:href="images/sprite.svg#phone"></use>
-                </svg>
-                <span class="sr-only">телефон</span>
-              </a>
-            </li>
-            <li class="user-nav__item">
-              <button class="user-nav__btn" type="button">
-                <svg class="user-nav__img">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-                <span class="sr-only">корзина</span>
-                <span class="user-nav__num">3</span>
-              </button>
-            </li>
-          </ul>
-          
+
+          <div class="menu__box">
+
+            <button class="menu__close" type="button">
+              <svg class="menu__img">
+                <use xlink:href="images/sprite.svg#close"></use>
+              </svg>
+              <span class="sr-only">закрыть меню</span>
+            </button>
+
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#" id="cakes">Торты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#" id="desserts">Десерты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Кафе</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#works">Заказ и доставка</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="user-nav">
+              <li class="user-nav__item">
+                <a class="user-nav__link" href="#" target="_blank">
+                  <svg class="user-nav__img">
+                    <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+                  <span class="sr-only">инстаграм</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <a class="user-nav__link" href="tel:89061564997">
+                  <svg class="user-nav__img">
+                    <use xlink:href="images/sprite.svg#phone"></use>
+                  </svg>
+                  <span class="sr-only">телефон</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <button class="user-nav__btn" type="button">
+                  <svg class="user-nav__img">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                  <span class="sr-only">корзина</span>
+                  <span class="user-nav__num">3</span>
+                </button>
+              </li>
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+    <main class="main"></main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+
+          <div class="footer__confidentiality">
+            <span class="footer__title">Чародейки</span>
+            <a class="footer__copy" href="#">Политика конфиденциальности</a>
+            <span>© 2018-2023 фабрика десертов Чародейки</span>
+          </div>
+
+          <div class="footer__navigation">
+            <h3 class="footer__title">Навигация</h3>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Торты</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Десерты</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Кафе</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Заказ и доставка</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__contacts">
+            <h3 class="footer__title">Связаться с нами</h3>
+            <a class="footer__link" href="#" target="_blank">Инстаграм</a>
+            <a class="footer__link" href="tel:+7(927)-374-86-86">+7(927)-374-86-86</a>
+          </div>
+
         </div>
-  
-      </nav>
-  
-    </div>
-  
-  </header>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
