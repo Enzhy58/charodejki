@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+
+                <nav class="menu">
+
+                    <a class="logo" href="#" id="home">
+                        <img class="logo__img" src="images/icons/logo.svg" width="196" height="65" alt="логотип">
+                    </a>
+
+                    <button class="menu__open" type="button">
+                        <span></span>
+                        <span class="sr-only">открыть меню</span>
+                    </button>
+
+                    <div class="menu__box">
+
+                        <button class="menu__close" type="button">
+                            <svg class="menu__img">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                            <span class="sr-only">закрыть меню</span>
+                        </button>
+
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" id="cakes">Торты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" id="desserts">Десерты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Кафе</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#works">Заказ и доставка</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+
+                        <ul class="user-nav">
+                            <li class="user-nav__item">
+                                <a class="user-nav__link" href="#" target="_blank">
+                                    <svg class="user-nav__img">
+                                        <use xlink:href="images/sprite.svg#instagram"></use>
+                                    </svg>
+                                    <span class="sr-only">инстаграм</span>
+                                </a>
+                            </li>
+                            <li class="user-nav__item">
+                                <a class="user-nav__link" href="tel:89061564997">
+                                    <svg class="user-nav__img">
+                                        <use xlink:href="images/sprite.svg#phone"></use>
+                                    </svg>
+                                    <span class="sr-only">телефон</span>
+                                </a>
+                            </li>
+                            <li class="user-nav__item">
+                                <button class="user-nav__btn" type="button">
+                                    <svg class="user-nav__img">
+                                        <use xlink:href="images/sprite.svg#cart"></use>
+                                    </svg>
+                                    <span class="sr-only">корзина</span>
+                                    <span class="user-nav__num">3</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main class="main">
+
+            <section class="cakes page-section">
+                <div class="container">
+                  <h2 class="title">Вес тортов</h2>
+                  <ul class="cakes__weight">
+                    <li class="cakes__box">
+                      <img class="cakes__img" src="images/cakes/weight/1.jpg" width="331" height="331" alt="торт на 6-8 человек">
+                      <h3 class="cakes__title">Торт 1.5 килограмма</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Небольной торт на 6-8 человек. Отличный вариант для семейного чаепития
+                          илипоздравления коллег.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <img class="cakes__img" src="images/cakes/weight/2.jpg" width="331" height="331" alt="торт на 8-10 человек">
+                      <h3 class="cakes__title">Торт 2 килограмма</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Торт на 8-10 человек. Подойдет для компаний среднего размера или для тех, кто
+                          хочет, чтобы сладкое осталось на утро после праздника.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <img class="cakes__img" src="images/cakes/weight/3.jpg" width="331" height="331" alt="торт на 12-16 человек">
+                      <h3 class="cakes__title">Торт 3 килограмма</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Торт для компаний 12-16 человек. Подойдет для большого праздника или детского
+                          дня
+                          рождения.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <img class="cakes__img" src="images/cakes/weight/4.jpg" width="331" height="331" alt="торт на 20-25 человек">
+                      <h3 class="cakes__title">Торт 4 килограмма</h3>
+                      <div class="cakes__text">
+                        <p>Торт на 20-25 человек. Юбилей, корпоратив или небольшая свадьба.</p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <img class="cakes__img" src="images/cakes/weight/5.jpg" width="331" height="331" alt="торты для больших праздников">
+                      <h3 class="cakes__title">Торт ярусные от 4 килограмм</h3>
+                      <div class="cakes__text">
+                        <p>Свадебные торты, торты для больших праздников.</p>
+                      </div>
+                    </li>
+                  </ul>
+              
+              
+                  <h2 class="title">Виды тортов</h2>
+                  <ul class="cakes__kind">
+                    <li class="cakes__box">
+                      <img class="cakes__img" src="images/cakes/kind/1.jpg" width="331" height="331" alt="бенто-торт">
+                      <h3 class="cakes__title">Бенто-торт</h3>
+                    </li>
+                    <li class="cakes__box">
+                      <img class="cakes__img" src="images/cakes/kind/2.jpg" width="331" height="331" alt="одноярусный торт">
+                      <h3 class="cakes__title">Одноярусный торт</h3>
+                    </li>
+                    <li class="cakes__box">
+                      <img class="cakes__img" src="images/cakes/kind/3.jpg" width="331" height="331" alt="многоярусный торт">
+                      <h3 class="cakes__title">Многоярусный торт</h3>
+                    </li>
+                  </ul>
+              
+              
+                  <h2 class="title">Начинка</h2>
+                  <ul class="cakes__filling">
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/1.jpg" width="331" height="331" alt="начинка: ваниль, вишня и хлопковый чизкейк">
+                        <span class="cakes__price">1600 <span>руб</span>/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Ванильный с вишней и хлопковым чизкейком</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Небольной торт на 6-8 человек. Ванильный бисквит, ванильная пропитка,
+                          сливочно-сырный крем, хлопковый чизкейк, вишневый соус с кусочками вишни
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/2.jpg" width="331" height="331" alt="начинка: ваниль, манго, клубника">
+                        <span class="cakes__price">1800 <span>руб</span>/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Ванильный с манго и клубникой</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Ванильный бисквит, сливочно-сырный крем, манговый холодный чизкейк,
+                          клубничный
+                          соус с кусочками клубники
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/3.jpg" width="331" height="331" alt="начинка: шоколад, банан и карамель">
+                        <span class="cakes__price">1500 <span>руб</span>/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Шоколадный с бананами и карамелью</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Шоколадный бисквит, ванильная пропитка, сливочно-сырный крем, бананы и
+                          сливочная
+                          карамель
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/4.jpg" width="331" height="331" alt="начинка: шоколад с соленой карамелью и арахисом">
+                        <span class="cakes__price">1500 <span>руб</span>/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Шоколадный с соленой карамелью и арахисом</h3>
+                      <div class="cakes__text">
+                        <p>Шоколадный бисквит, шоколадный сырный крем, соленая карамель, цельный арахис</p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/5.jpg" width="331" height="331" alt="начинка: морковный бисквит с чизкейком">
+                        <span class="cakes__price">1500 руб/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Морковный с чизкейком</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Пряный морковный бисквит с клюквой, сливочно-сырный крем, сливочная карамель,
+                          дроблённый арахис, запеченный чизкейк
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/6.jpg" width="331" height="331" alt="начинка: супершоколадный бисквит с вишней">
+                        <span class="cakes__price">1800 <span>руб</span>/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Супершоколадный с вишней</h3>
+                      <div class="cakes__text">
+                        <p>Шоколадный бисквит, ягодная пропитка, мягкий шоколадный ганаш, ягоды вишни</p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/7.jpg" width="331" height="331" alt="начинка: фундук с шоколадным чизкейком и карамелью">
+                        <span class="cakes__price">1900 <span>руб</span>/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Фундучный с шоколадным чизкейком и карамелью</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Фундучный бисквит, карамельная пропитка, сливочно-сырный крем, шоколадный
+                          чизкейк
+                          в глазури с дробленным фундуком, сливочная карамель
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/8.jpg" width="331" height="331" alt="начинка: банан-арахис">
+                        <span class="cakes__price">1600 <span>руб</span>/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Банан-арахис</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Ароматный банановый бисквит, сливочно-сырный крем, банановый мусс и
+                          арахисовый
+                          ганаш на французском молочном шоколаде
+                        </p>
+                      </div>
+                    </li>
+                    <li class="cakes__box">
+                      <div class="cakes__wrapper">
+                        <img class="cakes__img" src="images/cakes/filling/9.jpg" width="331" height="331" alt="начинка: шоколад-ягоды">
+                        <span class="cakes__price">1700 <span>руб</span>/кг</span>
+                      </div>
+                      <h3 class="cakes__title">Шоколадно-ягодный</h3>
+                      <div class="cakes__text">
+                        <p>
+                          Шоколадный бисквит, ягодный соус (из вишни, малины и черники), ягодное кремю
+                          с
+                          ягодами черники, сливочно-сырный крем
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+
+                    <div class="footer__confidentiality">
+                        <span class="footer__title">Чародейки</span>
+                        <a class="footer__copy" href="#">Политика конфиденциальности</a>
+                        <span>© 2018-2023 фабрика десертов Чародейки</span>
+                    </div>
+
+                    <div class="footer__navigation">
+                        <h3 class="footer__title">Навигация</h3>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Торты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Десерты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Кафе</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Заказ и доставка</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer__contacts">
+                        <h3 class="footer__title">Связаться с нами</h3>
+                        <a class="footer__link" href="#" target="_blank">Инстаграм</a>
+                        <a class="footer__link" href="tel:+7(927)-374-86-86">+7(927)-374-86-86</a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
