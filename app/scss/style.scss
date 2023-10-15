@@ -455,3 +455,105 @@
   }
 
 }
+
+.desserts {
+  background: linear-gradient(90deg, $accent, $lavender);
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+
+  &__item {
+    margin-bottom: 60px;
+    margin-right: 30px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: 0 3px 15px rgba($white, 0.5);
+    }
+
+  }
+
+}
+
+.product-card {
+  background-color: $silver;
+  border-radius: 5px;
+  max-width: 345px;
+  height: 100%;
+
+  &__img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 304px);
+    padding: 15px;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    display: block;
+    width: 95px;
+    height: 40px;
+    background-color: $accent;
+    border-radius: 20px;
+    margin-left: auto;
+    position: relative;
+    transition: box-shadow 0.3s, background-color 0.3s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 22px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("../images/sprite.svg#desserts-arrow");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: left 0.3s;
+      filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(241deg) brightness(111%) contrast(101%);
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 2px rgba($accent, 0.7);
+      background-color: $white;
+    }
+
+    &:hover::before {
+      filter: invert(42%) sepia(8%) saturate(1443%) hue-rotate(201deg) brightness(95%) contrast(86%);
+    }
+
+    &:hover::before {
+      left: 80%;
+    }
+
+    &:active::before {
+      left: 50%;
+    }
+
+  }
+  
+}
