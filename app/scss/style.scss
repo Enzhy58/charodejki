@@ -357,3 +357,55 @@
   }
 
 }
+
+.application {
+  background: $lavender;
+  &__inner {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 56px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__box {
+    max-width: 435px;
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 77px;
+    font-family: 'corinthia';
+    font-weight: 400;
+  }
+
+  &__text {
+    margin-bottom: 48px;
+  }
+
+  &__form {
+    text-align: center;
+  }
+
+  &__input {
+    width: 275px;
+    height: 64px;
+    border-radius: 39px;
+    border: 1px solid $dark;
+    background-color: $lavender;
+    padding: 0 31px;
+
+    &::placeholder {
+      color: $dark;
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+  }
+
+  &__input:first-child {
+    margin-bottom: 20px;
+  }
+
+}
