@@ -31,3 +31,52 @@
     }
 
 }
+
+
+@media (max-width: 992px) {
+
+    .top {
+
+        &__title {
+            font-size: 65px;
+            line-height: 60px;
+        }
+
+        &__description {
+            text-align: center;
+            display: block;
+        }
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .top {
+
+        &__img {
+            display: none;
+        }
+
+        &__info {
+            margin: 0 auto;
+        }
+
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .top {
+
+        &__title {
+            font-size: 55px;
+        }
+
+    }
+
+}
