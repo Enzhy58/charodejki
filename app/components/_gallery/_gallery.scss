@@ -27,3 +27,39 @@
     }
 
 }
+
+
+@media (max-width: 992px) {
+
+    .gallery {
+
+        &__item:nth-child(3),
+        &__item:nth-child(6) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .gallery {
+
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__btn {
+            margin-right: auto;
+        }
+
+    }
+
+}
