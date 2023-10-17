@@ -69,3 +69,49 @@
     }
 
 }
+
+
+@media (max-width: 992px) {
+
+    .footer {
+
+        &__title {
+            line-height: 45px;
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__confidentiality,
+        &__navigation,
+        &__contacts {
+            margin-bottom: 40px;
+            margin-right: 0;
+            text-align: center;
+        }
+
+        &__confidentiality {
+            order: 3;
+        }
+
+        &__navigation {
+            order: 1;
+        }
+
+        &__contacts {
+            order: 2;
+        }
+
+    }
+
+}
