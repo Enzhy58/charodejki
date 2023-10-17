@@ -123,7 +123,7 @@
     &:hover {
       color: $gold;
     }
-    
+
   }
 
   .menu {
@@ -360,6 +360,7 @@
 
 .application {
   background: $lavender;
+
   &__inner {
     background-color: $white;
     border-radius: 8px;
@@ -555,7 +556,7 @@
     }
 
   }
-  
+
 }
 
 .cakes {
@@ -608,6 +609,115 @@
   &__text {
     font-size: 18px;
     line-height: 22px;
+  }
+
+}
+
+.constructor {
+  background: linear-gradient(90deg, $accent, $lavender);
+
+  &__inner {
+    font-size: 18px;
+    background-color: $white;
+    border-radius: 8px;
+    padding: 56px 25px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .select {
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      max-width: 320px;
+      width: 100%;
+      margin-bottom: 20px;
+
+    }
+
+    &__text {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    &__input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+
+    &__style {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: $lavender;
+      border-radius: 50%;
+      margin-left: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+  }
+
+  .select__input:checked+.select__style::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $accent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .checkbox {
+
+    &__style {
+     border-radius: 0;
+    }
+    
+  }
+
+  .checkbox__input:checked+.checkbox__style::before {
+    border-radius: 0;
+  }
+
+  &__box {
+    max-width: 460px;
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__field {
+    width: 275px;
+    height: 40px;
+    border-radius: 39px;
+    border: 1px solid #292626;
+    background-color: #a9a9c4;
+    padding: 0 31px
+  }
+
+  &__area {
+    height: 140px;
+    border-radius: 10px;
   }
 
 }
