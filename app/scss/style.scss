@@ -620,7 +620,7 @@
     font-size: 18px;
     background-color: $white;
     border-radius: 8px;
-    padding: 56px 25px;
+    padding: 30px 30px 60px 30px;
   }
 
   &__wrapper {
@@ -631,23 +631,22 @@
   &__title {
     font-size: 25px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .select {
 
     &__body {
-      display: flex;
-      flex-direction: column;
       max-width: 320px;
       width: 100%;
-      margin-bottom: 20px;
-
+      margin-bottom: 30px;
     }
 
     &__text {
+      display: block;
       position: relative;
-      padding-left: 20px;
+      padding-left: 25px;
+      cursor: pointer;
     }
 
     &__input {
@@ -707,17 +706,100 @@
   }
 
   &__field {
-    width: 275px;
+    width: 100%;
     height: 40px;
     border-radius: 39px;
     border: 1px solid #292626;
     background-color: #a9a9c4;
-    padding: 0 31px
+    padding: 0 15px
   }
 
   &__area {
     height: 140px;
     border-radius: 10px;
+  }
+
+  .cake {
+    position: relative;
+    height: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 37px;
+      bottom: 0;
+      background-color: $accent;
+      border-radius: 20px;
+    }
+
+    &__base--vanilla,
+    &__filling--chocolate {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &__base--vanilla {
+      background-image: url("../images/constructor/base/base--vanilla.png");
+    }
+
+    &__filling--chocolate {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-image: url("../images/constructor/filling/filling--chocolate.png");
+    }
+
+    &__item {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    &__decor {
+
+      &--meringue {
+        background-image: url("../images/constructor/decor/decor--meringue.png");
+      }
+
+      &--marshmallow {
+        background-image: url("../images/constructor/decor/decor--marshmallow.png");
+      }
+
+      &--chocolate {
+        background-image: url("../images/constructor/decor/decor--chocolate.png");
+      }
+
+      &--cookies {
+        background-image: url("../images/constructor/decor/decor--cookie.png");
+      }
+
+      &--pecan {
+        background-image: url("../images/constructor/decor/decor--pecan.png");
+      }
+
+      &--pistachio {
+        background-image: url("../images/constructor/decor/decor--pistachio.png");
+      }
+
+      &--hazel {
+        background-image: url("../images/constructor/decor/decor--hazel.png");
+      }
+
+    }
+
   }
 
 }
