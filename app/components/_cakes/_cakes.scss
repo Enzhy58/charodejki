@@ -51,3 +51,30 @@
     }
 
 }
+
+
+@media (max-width: 576px) {
+
+    .cakes {
+
+        &__box {
+            max-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__img {
+            margin-bottom: 10px;
+        }
+
+    }
+
+}
