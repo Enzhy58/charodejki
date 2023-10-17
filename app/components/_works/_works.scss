@@ -1,0 +1,95 @@
+.works {
+    background: linear-gradient(90deg, $accent, $lavender);
+
+    &__top {
+        display: flex;
+        align-items: start;
+        border-bottom: 2px solid $silver;
+        padding-bottom: 30px;
+    }
+
+    &__bottom {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 350px;
+    }
+
+    &__item {
+        max-width: 250px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $silver;
+        }
+
+    }
+
+    &__item--production,
+    &__item--delivery {
+        margin-left: 342px;
+    }
+
+    &__item--choose::after {
+        bottom: -37px;
+    }
+
+    &__item--production::after {
+        bottom: -81px;
+    }
+
+    &__item--application::after {
+        top: -37px;
+    }
+
+    &__item--delivery::after {
+        top: -37px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        padding-left: 45px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 0;
+            bottom: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    }
+
+    &__title--choose::after {
+        background-image: url("../images/icons/choose.png");
+    }
+
+    &__title--production::after {
+        background-image: url("../images/icons/production.png");
+    }
+
+    &__title--application::after {
+        background-image: url("../images/icons/application.png");
+    }
+
+    &__title--delivery::after {
+        background-image: url("../images/icons/delivery.png");
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+}

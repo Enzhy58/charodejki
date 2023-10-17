@@ -1,0 +1,40 @@
+.about {
+    background: linear-gradient(90deg, $accent, $lavender);
+
+    &__inner {
+        text-align: center;
+        max-width: 870px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: 'corinthia';
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 96px;
+    }
+
+    &__text {
+        padding-bottom: 18px;
+        color: $silver;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 236px;
+            height: 2px;
+            background-color: $dark;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+    }
+
+    &__logo {
+        margin: 0 auto;
+    }
+
+}
