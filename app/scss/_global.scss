@@ -94,3 +94,55 @@ body {
   }
 
 }
+
+
+@media (max-width: 1150px) {
+
+  .wrapper__fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 65px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .btn {
+    width: 250px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .page-section {
+    padding: 40px 0 40px;
+  }
+
+  .title {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  .btn--desserts {
+    width: 265px;
+  }
+
+}

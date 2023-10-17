@@ -44,6 +44,7 @@ ul {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -71,7 +72,6 @@ a {
 a,
 button,
 input,
-textarea,
-.reviews__box {
+textarea {
   outline: transparent;
 }
