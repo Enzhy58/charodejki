@@ -38,3 +38,41 @@
     }
 
 }
+
+
+@media (max-width: 992px) {
+
+    .about {
+
+        &__title {
+            font-size: 65px;
+        }
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .about {
+
+        &__title {
+            font-size: 55px;
+        }
+
+        &__text {
+
+            &::before {
+                width: 170px;
+            }
+
+        }
+
+        &__logo {
+            width: 170px;
+        }
+
+    }
+
+}
