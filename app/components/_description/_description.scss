@@ -49,6 +49,11 @@
 
     .description {
 
+        &__wrapper {
+            height: auto;
+            padding-bottom: 80px;
+        }
+
         &__content {
             flex-direction: column;
         }
@@ -63,19 +68,6 @@
 
         &__title {
             margin-bottom: 25px;
-        }
-
-    }
-
-}
-
-
-@media (max-width: 480px) {
-
-    .description {
-
-        &__box {
-            width: 80%;
         }
 
     }

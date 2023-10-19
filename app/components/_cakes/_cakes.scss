@@ -47,7 +47,7 @@
 
     &__text {
         font-size: 18px;
-        line-height: 22px;
+        line-height: 1.6;
     }
 
 }
@@ -58,7 +58,6 @@
     .cakes {
 
         &__box {
-            max-width: 250px;
             margin-bottom: 30px;
         }
 

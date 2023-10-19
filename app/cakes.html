@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Кондитерская Чародейки | Торты</title>
   <link rel="stylesheet" href="css/cakes.min.css">
 </head>
 
@@ -46,10 +46,10 @@
                         <a class="menu__link" href="#">Кафе</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#works">Заказ и доставка</a>
+                        <a class="menu__link" href="#">Доставка</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#contacts">Контакты</a>
+                        <a class="menu__link" href="#">Контакты</a>
                     </li>
                 </ul>
 
@@ -116,10 +116,10 @@
     <div class="container">
         <h2 class="title">Конструктор тортов</h2>
         <div class="constructor__inner">
-            <form class="constructor__form" action="#">
-
-                <div class="constructor__wrapper">
-                    <div class="select select__body">
+            <form class="constructor__form" action="#" id="designer">
+                <ul class="constructor__grid">
+                    
+                    <li class="select">
                         <h3 class="constructor__title">Форма торта</h3>
                         <label class="select__text">
                             <input class="select__input" type="radio" name="shape">
@@ -136,142 +136,142 @@
                             <span class="select__style"></span>
                             Прямоугольник
                         </label>
-                    </div>
+                    </li>
 
-                    <div class="select select__body">
+                    <li class="select">
                         <h3 class="constructor__title">Основа для торта</h3>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="base" checked>
+                            <input class="select__input" type="radio" name="base" value="vanilla" checked>
                             <span class="select__style"></span>
                             Ванильный бисквит
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="base">
+                            <input class="select__input" type="radio" name="base" value="chocolate">
                             <span class="select__style"></span>
                             Шоколадный бисквит
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="base">
+                            <input class="select__input" type="radio" name="base" value="honey">
                             <span class="select__style"></span>
                             Медовое печенье
                         </label>
-                    </div>
+                    </li>
 
-                    <div class="select select__body">
+                    <li class="select">
                         <h3 class="constructor__title">Крем для начинки</h3>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="filling" checked>
+                            <input class="select__input" type="radio" name="filling" value="white" checked>
                             <span class="select__style"></span>
                             Белый крем
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="filling">
+                            <input class="select__input" type="radio" name="filling" value="chocolate">
                             <span class="select__style"></span>
                             Шоколадный крем
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="filling">
+                            <input class="select__input" type="radio" name="filling" value="white">
                             <span class="select__style"></span>
                             Крем чиз
                         </label>
-                    </div>
-                </div>
+                    </li>
 
-                <div class="constructor__wrapper">
-                    <div class="select select__body">
+
+                    <li class="select">
                         <h3 class="constructor__title">Крем для покрытия</h3>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="coating" checked>
+                            <input class="select__input" type="radio" name="coating" value="0" checked>
                             <span class="select__style"></span>
                             Без покрытия
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="coating">
+                            <input class="select__input" type="radio" name="coating" value="white">
                             <span class="select__style"></span>
                             Белый крем
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="coating">
+                            <input class="select__input" type="radio" name="coating" value="chocolate">
                             <span class="select__style"></span>
                             Шоколадный крем
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="coating">
+                            <input class="select__input" type="radio" name="coating" value="white">
                             <span class="select__style"></span>
                             Крем чиз
                         </label>
-                    </div>
+                    </li>
 
 
-                    <div class="select select__body">
+                    <li class="select">
                         <h3 class="constructor__title">Топпинг</h3>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="topping" checked>
+                            <input class="select__input" type="radio" name="topping" value="0" checked>
                             <span class="select__style"></span>
                             Без топпинга
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="topping">
+                            <input class="select__input" type="radio" name="topping" value="white">
                             <span class="select__style"></span>
                             Белый соус
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="topping">
+                            <input class="select__input" type="radio" name="topping" value="caramel">
                             <span class="select__style"></span>
                             Карамельный сироп
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="topping">
+                            <input class="select__input" type="radio" name="topping" value="maple">
                             <span class="select__style"></span>
                             Кленовый сироп
                         </label>
                         <label class="select__text">
-                            <input class="select__input" type="radio" name="topping">
+                            <input class="select__input" type="radio" name="topping" value="milky">
                             <span class="select__style"></span>
                             Молочный шоколад
                         </label>
-                    </div>
+                    </li>
 
 
-                    <div class="select select__body checkbox">
+                    <li class="select checkbox">
                         <h3 class="constructor__title">Декор</h3>
                         <label class="select__text checkbox__text">
-                            <input class="select__input checkbox__input" type="checkbox" name="">
+                            <input class="select__input checkbox__input" type="checkbox" name="decor[]" value="meringue">
                             <span class="select__style checkbox__style"></span>
                             Безе
                         </label>
                         <label class="select__text checkbox__text">
-                            <input class="select__input checkbox__input" type="checkbox" name="">
+                            <input class="select__input checkbox__input" type="checkbox" name="decor[]" value="marshmallow">
                             <span class="select__style checkbox__style"></span>
                             Маршмелоу
                         </label>
                         <label class="select__text checkbox__text">
-                            <input class="select__input checkbox__input" type="checkbox" name="">
+                            <input class="select__input checkbox__input" type="checkbox" name="decor[]" value="chocolate">
                             <span class="select__style checkbox__style"></span>
                             Шоколадная стружка
                         </label>
                         <label class="select__text checkbox__text">
-                            <input class="select__input checkbox__input" type="checkbox" name="">
+                            <input class="select__input checkbox__input" type="checkbox" name="decor[]" value="cookies">
                             <span class="select__style checkbox__style"></span>
                             Фигурное печенье
                         </label>
                         <label class="select__text checkbox__text">
-                            <input class="select__input checkbox__input" type="checkbox" name="">
+                            <input class="select__input checkbox__input" type="checkbox" name="decor[]" value="pecan">
                             <span class="select__style checkbox__style"></span>
                             Пекан
                         </label>
                         <label class="select__text checkbox__text">
-                            <input class="select__input checkbox__input" type="checkbox" name="">
+                            <input class="select__input checkbox__input" type="checkbox" name="decor[]" value="pistachio">
                             <span class="select__style checkbox__style"></span>
                             Фисташки
                         </label>
                         <label class="select__text checkbox__text">
-                            <input class="select__input checkbox__input" type="checkbox" name="">
+                            <input class="select__input checkbox__input" type="checkbox" name="decor[]" value="hazel">
                             <span class="select__style checkbox__style"></span>
                             Фундук
                         </label>
-                    </div>
-                </div>
+                    </li>
+                </ul>
+
 
 
                 <div class="constructor__wrapper">
@@ -296,34 +296,31 @@
                         </div>
                     </div>
 
-                    <div class="constructor__box">
-                        <h3 class="constructor__title">Ваш торт будет выглядеть так</h3>
-                        <div class="cake">
-
-                            <div class="cake__base--vanilla"></div>
-                            <div class="cake__filling--chocolate"></div>
-                            <!-- <div class="cake__base">
+                    <div class="cake constructor__box">
+                        <h3 class="constructor__title cake__title">Ваш торт будет выглядеть так</h3>
+                        <ul class="cake__inner" id="cake">
+                            <li class="cake__base">
                                 <div class="cake__item cake__base--vanilla"></div>
                                 <div class="cake__item cake__base--chocolate"></div>
                                 <div class="cake__item cake__base--honey"></div>
-                            </div>
-                            <div class="cake__filling">
+                            </li>
+                            <li class="cake__filling">
                                 <div class="cake__item cake__filling--white"></div>
                                 <div class="cake__item cake__filling--chocolate"></div>
-                                <div class="cake__item cake__filling--cheese"></div>
-                            </div>
-                            <div class="cake__coating">
+                                <div class="cake__item cake__filling--white"></div>
+                            </li>
+                            <li class="cake__coating">
                                 <div class="cake__item cake__coating--white"></div>
                                 <div class="cake__item cake__coating--chocolate"></div>
-                                <div class="cake__item cake__coating--cheese"></div>
-                            </div>
-                            <div class="cake__topping">
+                                <div class="cake__item cake__coating--white"></div>
+                            </li>
+                            <li class="cake__topping">
                                 <div class="cake__item cake__topping--white"></div>
                                 <div class="cake__item cake__topping--caramel"></div>
                                 <div class="cake__item cake__topping--maple"></div>
                                 <div class="cake__item cake__topping--milky"></div>
-                            </div> -->
-                            <div class="cake__decor">
+                            </li>
+                            <li class="cake__decor">
                                 <div class="cake__item cake__decor--meringue"></div>
                                 <div class="cake__item cake__decor--marshmallow"></div>
                                 <div class="cake__item cake__decor--chocolate"></div>
@@ -331,11 +328,11 @@
                                 <div class="cake__item cake__decor--pecan"></div>
                                 <div class="cake__item cake__decor--pistachio"></div>
                                 <div class="cake__item cake__decor--hazel"></div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
+                        <div class="cake__plate"></div>
                     </div>
                 </div>
-
             </form>
         </div>
     </div>
@@ -556,7 +553,7 @@
                             <a class="menu__link" href="#">Кафе</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Заказ и доставка</a>
+                            <a class="menu__link" href="#">Доставка</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">Контакты</a>

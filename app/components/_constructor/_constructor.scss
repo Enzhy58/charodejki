@@ -3,14 +3,16 @@
 
     &__inner {
         font-size: 18px;
-        background-color: $white;
+        background-color: $lavender;
         border-radius: 8px;
         padding: 30px 30px 60px 30px;
     }
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 30px;
     }
 
     &__title {
@@ -19,69 +21,17 @@
         margin-bottom: 5px;
     }
 
-    .select {
-
-        &__body {
-            max-width: 320px;
-            width: 100%;
-            margin-bottom: 30px;
-        }
-
-        &__text {
-            display: block;
-            position: relative;
-            padding-left: 25px;
-            cursor: pointer;
-        }
-
-        &__input {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            clip: rect(0 0 0 0);
-        }
-
-        &__style {
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            background-color: $lavender;
-            border-radius: 50%;
-            margin-left: -25px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .select__input:checked+.select__style::before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: $accent;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .checkbox {
-
-        &__style {
-            border-radius: 0;
-        }
-
-    }
-
-    .checkbox__input:checked+.checkbox__style::before {
-        border-radius: 0;
+    &__additionally {
+        margin-right: 50px;
     }
 
     &__box {
-        max-width: 460px;
+        max-width: 475px;
         width: 100%;
 
         &:first-child {
@@ -95,7 +45,7 @@
         height: 40px;
         border-radius: 39px;
         border: 1px solid #292626;
-        background-color: #a9a9c4;
+        background-color: $silver;
         padding: 0 15px
     }
 
@@ -105,40 +55,18 @@
     }
 
     .cake {
-        position: relative;
-        height: 100%;
 
-        &::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 37px;
-            bottom: 0;
-            background-color: $accent;
-            border-radius: 20px;
+        &__title {
+            text-align: center;
         }
 
-        &__base--vanilla,
-        &__filling--chocolate {
-            height: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-        }
-
-        &__base--vanilla {
-            background-image: url("../images/constructor/base/base--vanilla.png");
-        }
-
-        &__filling--chocolate {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            background-image: url("../images/constructor/filling/filling--chocolate.png");
+        &__inner {
+            position: relative;
+            padding-bottom: 70%;
         }
 
         &__item {
+            display: none;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -146,12 +74,72 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            display: none;
         }
 
-        .active {
-            display: block;
+        &__base {
+
+            &--vanilla {
+                background-image: url("../images/constructor/base/base--vanilla.png");
+            }
+
+            &--chocolate {
+                background-image: url("../images/constructor/base/base--chocolate.png");
+            }
+
+            &--honey {
+                background-image: url("../images/constructor/base/base--honey.png");
+            }
+
         }
+
+        &__filling {
+
+            &--white {
+                background-image: url("../images/constructor/filling/filling--white.png");
+            }
+
+            &--chocolate {
+                background-image: url("../images/constructor/filling/filling--chocolate.png");
+            }
+
+        }
+
+        &__coating {
+
+            &--white {
+                background-image: url("../images/constructor/coating/coating--white.png");
+            }
+
+            &--chocolate {
+                background-image: url("../images/constructor/coating/coating--chocolate.png");
+            }
+
+        }
+
+        &__topping {
+
+            &--white {
+                background-image: url("../images/constructor/topping/topping--white.png");
+            }
+
+            &--chocolate {
+                background-image: url("../images/constructor/topping/topping--chocolate.png");
+            }
+
+            &--caramel {
+                background-image: url("../images/constructor/topping/topping--caramel.png");
+            }
+
+            &--maple {
+                background-image: url("../images/constructor/topping/topping--maple.png");
+            }
+
+            &--milky {
+                background-image: url("../images/constructor/topping/topping--milky.png");
+            }
+
+        }
+
 
         &__decor {
 
@@ -183,6 +171,129 @@
                 background-image: url("../images/constructor/decor/decor--hazel.png");
             }
 
+        }
+
+        &__plate {
+            width: 100%;
+            background-color: $accent;
+            border-radius: 39px;
+            padding-bottom: 5%;
+        }
+
+    }
+
+}
+
+.select {
+
+    &__text {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+    }
+
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    &__style {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: $silver;
+        border-radius: 50%;
+        margin-left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+.select__input:checked+.select__style::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $accent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.checkbox {
+
+    &__style {
+        border-radius: 0;
+    }
+
+}
+
+.checkbox__input:checked+.checkbox__style::before {
+    border-radius: 0;
+}
+
+
+@media (max-width: 992px) {
+
+    .constructor {
+
+        &__inner {
+            padding-bottom: 30px;
+        }
+
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__additionally {
+            order: 2;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        .cake {
+            margin-bottom: 30px;
+        }
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .constructor {
+
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 15px;
+        }
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .constructor {
+
+        &__inner {
+            font-size: 16px;
+        }
+
+        &__title {
+            font-size: 20px;
         }
 
     }
